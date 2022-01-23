@@ -1,4 +1,180 @@
-div.video-spacer {
+:root {
+	/* --sand-100: #dbd09c; */
+	--sand-100: #F0EEE0;
+	--sand-200: #E7E4CA;
+	--sand-300: #DBD5B1;
+	--sand-400: #D2CC9D;
+	--sand-500: #C9C291;
+	--sand-600: #B8B075;
+	--sand-700: #9C945B;
+	--sand-800: #7D753C;
+	--sand-900: #5F5A38;
+	
+	--brick-100: #F1BF98;
+	--brick-200: #E6A06A;
+	--brick-300: #E28B48;
+	--brick-400: #D8701F;
+	--brick-500: #C56216;
+	--brick-600: #B6580F;
+	--brick-700: #A84F0A;
+	--brick-800: #98470A;
+	--brick-900: #863F08;
+
+	--text-opacity-9: rgba(0,0,0,0.88);
+	--text-opacity-8: rgba(0,0,0,0.78);
+	--text-opacity-7: rgba(0,0,0,0.68);
+	--text-opacity-6: rgba(0,0,0,0.58);
+	--text-opacity-5: rgba(0,0,0,0.48);
+	--text-opacity-4: rgba(0,0,0,0.38);
+}
+
+/* FONTS */
+@font-face {
+	font-family: "Basteleur";
+	font-weight: 400;
+	src: url('./assets/fonts/Basteleur-Bold.woff');
+}
+@font-face {
+	font-family: "Savate";
+	font-weight: 400;
+	src: url('./assets/fonts/savate-regular-webfont.woff');
+}
+@font-face {
+	font-family: "Fengardo Neue";
+	font-weight: 400;
+	src: url('./assets/fonts/fengardoneue_regular-webfont.woff');
+}
+@font-face {
+	font-family: "PT Serif";
+	font-weight: 400;
+	src: url('./assets/fonts/pt-serif-v12-latin-regular.woff');
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 100%;
+	font-family: serif;
+}
+
+body {
+	background: var(--sand-100);
+	padding: 1rem;
+}
+
+h1,h2,h3,h4,h5 {
+	font-family: "Basteleur", serif;
+}
+
+.main-wrapper {
 	display: block;
-	height: 110vh;
+	max-width: 48rem;
+	margin: 0 auto;
+}
+
+main {
+	/* max-width: 48rem; */
+}
+
+h1 {
+	margin: 2rem 0;
+	font-size: 2.5rem;
+}
+
+figure {
+	margin: 0;
+	margin-bottom: 2rem;
+	padding: 0;
+	width: 100%;
+}
+
+figcaption {
+	padding: 0.25rem 0;
+	text-align: center;
+	color: var(--text-opacity-8)
+}
+
+img.cover-photo {
+	border-radius: 20px;
+	width: 100%;
+}
+
+.archive-link {
+	display: block;
+	padding: 1rem 0;
+	text-align: left;
+	width: 100%;
+}
+
+.archive-link a {
+	color: var(--brick-900);
+	border-radius: 20px;
+	font-family: "Basteleur";
+	font-size: 1.05rem;
+	line-height: 2;
+	text-decoration: underline;
+}
+
+.archive-link a:hover {
+	text-decoration: none;
+	color: var(--brick-800);
+}
+
+.archive-link a:visited {
+	color: var(--sand-800);
+}
+.archive-link a:visited:hover {
+	color: var(--sand-700);
+}
+
+@media screen and (min-width:480px) {
+	h1 {
+		margin: 4rem 0;
+	}
+
+	.archive-link {
+		padding: 0.5rem 0;
+		text-align: center;
+	}
+
+	.archive-link a {
+		padding: 1rem 2rem;
+	}
+}
+
+hr {
+	border-color: var(--text-opacity-4);
+	margin: 1rem 0;
+}
+
+article.full {
+	color: var(--text-opacity-8);
+	line-height: 1.4;
+	font-family: "PT Serif";
+}
+
+article.full p.subtitle {
+	font-size: 1.4rem;
+	font-weight: bold;
+}
+
+article.full p {
+	font-size: 1.1rem;
+	line-height: 1.6;
+}
+
+/* ----------- */
+.wranjer h1,
+.wranjer h2,
+.wranjer h3,
+.wranjer h4,
+.wranjer h5 {
+	font-family: "Savate", sans-serif;
+}
+
+.faetherwatch h1,
+.faetherwatch h2,
+.faetherwatch h3,
+.faetherwatch h4,
+.faetherwatch h5 {
+	font-family: "Fengardo Neue", sans-serif;
 }
